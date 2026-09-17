@@ -11,6 +11,26 @@
 }
 
 body{
-    background-color: #1b1624;
+    background-color: black;
+    
+    
+}
+
+.info{
+    width: 100%;
+    
+    background-color: transparent;  /*DECIDAM DEPOIS SE VAI DEIXAR UM TITULO COM O NOME DA EMPRESA NO TOPO DO SITE*/
+    
+    
+    
+}
+
+.info h1{
+    text-align: center;
+    color: rgb(218, 38, 224);
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
     
 }
