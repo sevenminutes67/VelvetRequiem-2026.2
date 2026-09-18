@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+*{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    text-transform: uppercase;
+}
+
 #videoFundo{
     position: fixed;
     top: 0;
@@ -10,10 +23,19 @@
     z-index: -1;
 }
 
+p{
+    font-size: 22px;
+    color: rgb(208, 255, 0);
+    font-family: "Indie Flower", cursive;
+}
+
+.textoFinal{ /*DEIXEI ESSA CLASSE PRA MODIFICAR O FINAL DOS PARAGRAFOS. TO ME BASEANDO NO SITE DA PUPPET COMBO*/
+    font-family: "Permanent Marker", cursive;
+    text-decoration: line-through;
+}
+
 body{
-    background-color: black;
-    
-    
+    background-color: black; 
 }
 
 .info{
@@ -33,4 +55,15 @@ body{
 
 
     
+}
+
+.cd{
+    background: transparent;
+    backdrop-filter: blur(3px);
+    height: 100%;
+    width: 700px;
+  
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px rgb(208, 255, 0);
+   
 }
