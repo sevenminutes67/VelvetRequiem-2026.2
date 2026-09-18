@@ -2,8 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-
-
 *{
     text-align: center;
     justify-content: center;
@@ -34,35 +32,37 @@ p{
     text-decoration: line-through;
 }
 
+h2{
+    color: red;
+    font-size: 10px
+}
+
 body{
     background-color: black; 
 }
 
 .info{
     width: 100%;
-    
-    background-color: transparent;  /*DECIDAM DEPOIS SE VAI DEIXAR UM TITULO COM O NOME DA EMPRESA NO TOPO DO SITE*/
-    
-    
-    
+    background-color: transparent;  /*DECIDAM DEPOIS SE VAI DEIXAR UM TITULO COM O NOME DA EMPRESA NO TOPO DO SITE*/  
 }
 
 .info h1{
     text-align: center;
     color: rgb(218, 38, 224);
-    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+.ap{
+    width: 560px;
 
-    
 }
 
 .cd{
-    background: transparent;
+    background: rgba(0, 0, 0, 0.5);
+    
     backdrop-filter: blur(3px);
     height: 100%;
-    width: 700px;
-  
+    width: 900px;
     border-radius: 8px;
     text-shadow: 1px 1px 1px rgb(208, 255, 0);
    
