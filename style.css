@@ -22,10 +22,11 @@
 }
 
 p{
-    font-size: 22px;
+    font-size: 26px;
     color: rgb(208, 255, 0);
     font-family: "Indie Flower", cursive;
 }
+
 
 .textoFinal{ /*DEIXEI ESSA CLASSE PRA MODIFICAR O FINAL DOS PARAGRAFOS. TO ME BASEANDO NO SITE DA PUPPET COMBO*/
     font-family: "Permanent Marker", cursive;
@@ -53,13 +54,17 @@ body{
 }
 
 .ap{
-    width: 560px;
+    width: 600px;
+
+}
+
+.foto-jogo1{
+
 
 }
 
 .cd{
     background: rgba(0, 0, 0, 0.5);
-    
     backdrop-filter: blur(3px);
     height: 100%;
     width: 900px;
