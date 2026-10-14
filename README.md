@@ -1,4 +1,4 @@
-# Velvet Requiem 🎮
+# Velvet Requiem 
 
 A **Velvet Requiem** é uma iniciativa de três desenvolvedores que compartilham o objetivo de contribuir para o crescimento do mercado brasileiro de jogos independentes.
 
@@ -23,7 +23,7 @@ A distribuição dos benefícios e os valores de cada nível ainda serão defini
 
 ## Estado do projeto
 
-🚧 **Em desenvolvimento.**
+ **Em desenvolvimento.**
 
 O site e sua documentação estão sendo construídos. As funcionalidades descritas representam o escopo planejado e podem ser ajustadas ao longo do projeto.
 
