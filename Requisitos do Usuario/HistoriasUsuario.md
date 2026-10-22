@@ -1,75 +1,93 @@
-# Histórias de Usuário — Velvet Requiem
+# 1. História de Usuário
 
-As histórias descrevem o comportamento esperado do projeto. US01–US03 preservam os objetivos anteriores; US04–US07 completam os vínculos já existentes nos requisitos funcionais. US04 e US05 incorporam as decisões do PDF corrigido da Atividade 04; US08 documenta o login mencionado nesse refinamento, preservando todos os identificadores anteriores.
+A Tabela 3 a seguir contém as histórias de usuário do projeto Velvet Requiem.
 
-Os testes de compatibilidade seguem RNF03. Os Story Points de US01–US03 foram preservados da documentação anterior; as novas histórias serão estimadas pelo grupo após o detalhamento da implementação. Prioridades foram alinhadas aos RFs.
+<table>
+    <thead>
+        <tr style="background-color: purple; color: white">
+            <th style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">ID</th>
+            <th style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">História de Usuário</th>
+            <th style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Critérios de aceitação</th>
+            <th style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Prioridade</th>
+            <th style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF/RNF relacionado</th>
+            <th style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Story Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="ustory-01">
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US01</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como visitante, eu quero visualizar a proposta e as principais características do jogo na página inicial para decidir se tenho interesse no projeto.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>Ao acessar a página inicial, o visitante encontra uma seção identificada com a apresentação do jogo.</li><li>A seção apresenta a proposta e as principais características conforme o conteúdo fornecido pela equipe.</li><li>Nas áreas de visualização previstas em RNF03, o conteúdo permanece legível, sem cortes ou sobreposições que impeçam sua leitura.</li><li>A página inicial atende ao limite de carregamento e às condições de medição de RNF02.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF01; RNF01, RNF02, RNF03, RNF06</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">3</td>
+        </tr>
+        <tr id="ustory-02">
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US02</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como visitante, eu quero assistir ao trailer e controlar sua reprodução para conhecer a atmosfera e o estilo visual do jogo no meu ritmo.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>A seção de trailer disponibiliza o vídeo do jogo fornecido pela equipe.</li><li>Com o vídeo carregado e pausado, acionar a reprodução inicia o vídeo.</li><li>Durante a reprodução, acionar a pausa interrompe o avanço do vídeo.</li><li>Após a pausa, acionar a reprodução retoma o vídeo do ponto interrompido.</li><li>Em celular, o visitante consegue expandir o vídeo para tela cheia e retornar à página; fora da tela cheia, o vídeo se ajusta à largura disponível e seus controles permanecem acessíveis.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF02; RNF01, RNF02, RNF03</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">3</td>
+        </tr>
+        <tr id="ustory-03">
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US03</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como potencial apoiador, eu quero consultar os três planos e seus preços para identificar uma opção compatível com o valor que pretendo contribuir.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>A seção de apoio apresenta os três planos definidos pelo projeto.</li><li>Cada plano possui uma identificação que o distingue dos demais e apresenta seu preço.</li><li>Os valores correspondem aos definidos pela equipe e ficam associados ao plano correto.</li><li>Identificação e preço seguem a mesma ordem de apresentação nos três planos.</li><li>Nos ambientes de RNF03, é possível consultar todos os planos e preços sem informações ocultadas por cortes ou sobreposições.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF03; RNF01, RNF03, RNF06</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">5</td>
+        </tr>
+        <tr id="ustory-04">
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US04</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como visitante, eu quero criar uma conta na plataforma para associar minhas aquisições e meus benefícios ao meu cadastro.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>O formulário apresenta os quatro campos e identifica que todos são obrigatórios.</li><li>Ao enviar dados válidos e um e-mail ainda não cadastrado, o sistema cria uma única conta e informa a conclusão.</li><li>Se um campo obrigatório estiver vazio ou não atender às regras, o sistema não cria a conta e informa o problema que precisa ser corrigido.</li><li>Se a senha e sua confirmação forem diferentes, o sistema impede o cadastro e informa a divergência.</li><li>Se o e-mail já estiver cadastrado, o sistema não cria uma segunda conta e informa que não foi possível concluir o cadastro com os dados apresentados.</li><li>Após corrigir os dados, o visitante consegue reenviar o formulário.</li><li>Em ambiente publicado, os dados são enviados por HTTPS e a senha não é armazenada em texto puro nem exposta em respostas ou logs, conforme RNF04.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF04; RNF03 e RNF04</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">não atribuídos nesta atividade</td>
+        </tr>
+        <tr id="ustory-05">
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US05</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como usuário cadastrado, eu quero adquirir um dos três planos de apoio para contribuir com o desenvolvimento do jogo e obter os benefícios correspondentes.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>Se o visitante tentar adquirir um plano sem estar identificado, o sistema solicita que entre em sua conta antes de prosseguir.</li><li>Após selecionar um plano, o usuário visualiza sua identificação, preço e benefícios antes de iniciar o pagamento.</li><li>O servidor registra a aquisição pendente vinculada à conta e ao plano selecionados, utilizando o preço definido pelo sistema.</li><li>Quando o servidor recebe e valida a confirmação do serviço de pagamento, a aquisição passa para confirmada e os benefícios correspondentes são disponibilizados.</li><li>Uma confirmação referente a outra aquisição ou com valor incompatível não libera benefícios.</li><li>Se a aquisição permanecer pendente, for cancelada ou falhar, o sistema apresenta a situação e não concede novos benefícios.</li><li>Caso a mesma confirmação seja recebida mais de uma vez, o sistema mantém um único registro de aquisição, sem duplicar a concessão de benefícios.</li><li>Ao concluir a operação, o registro corresponde à conta, ao plano e ao valor apresentados antes do pagamento.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF05; RF08 (identificação por login); RNF03 e RNF04</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">não atribuídos nesta atividade</td>
+        </tr>
+        <tr id="ustory-06">
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US06</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como apoiador, eu quero consultar meu plano adquirido e seus benefícios para saber o que meu apoio me permite receber ou acessar.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>Com a identidade do apoiador estabelecida e uma aquisição confirmada, o sistema apresenta o plano vinculado à sua conta.</li><li>A lista de benefícios corresponde à configuração do plano adquirido, sem apresentar benefícios de outro plano como direitos já obtidos.</li><li>Quando a conta não possui plano confirmado, o sistema informa essa condição e não apresenta benefícios como adquiridos.</li><li>Solicitações sem autorização não retornam os dados privados do plano de outra conta, conforme RNF05.</li><li>A apresentação respeita os critérios de compatibilidade e consistência de RNF03 e RNF06.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF06; RNF03, RNF05, RNF06</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">a estimar pela equipe</td>
+        </tr>
+        <tr id="ustory-07">
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US07</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como apoiador, eu quero acessar os conteúdos exclusivos incluídos no meu plano para usufruir dos benefícios do apoio realizado.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>Para uma conta com aquisição confirmada, o sistema permite abrir os conteúdos disponibilizados e incluídos no respectivo plano.</li><li>Para uma conta cujo plano não inclui determinado conteúdo, o sistema nega o acesso sem entregar esse conteúdo.</li><li>Uma solicitação sem identificação válida ou sem plano confirmado não retorna conteúdo exclusivo.</li><li>As restrições também são aplicadas a solicitações diretas ao endereço do conteúdo, conforme RNF05.</li><li>Quando não houver conteúdo publicado para um benefício previsto, o sistema informa a indisponibilidade, sem apresentar um acesso inexistente como disponível.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF07; RNF03, RNF05</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">a estimar pela equipe</td>
+        </tr>
+        <tr id="ustory-08">
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US08</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como usuário cadastrado, eu quero entrar na minha conta com e-mail e senha para adquirir um plano e acessar meus benefícios com minha identidade verificada.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>O formulário de login solicita e-mail e senha.</li><li>Ao informar as credenciais válidas de uma conta existente, o sistema estabelece uma sessão associada àquela conta.</li><li>A comparação do e-mail segue a normalização definida no cadastro; a senha deve ser verificada sem alterar seu conteúdo.</li><li>Se o e-mail não existir ou a senha estiver incorreta, o sistema não estabelece a sessão e apresenta a mesma mensagem genérica: “E-mail ou senha inválidos”.</li><li>Se um campo obrigatório estiver vazio, o sistema solicita seu preenchimento e não conclui o login.</li><li>A identidade usada na aquisição e nas consultas privadas deve corresponder à sessão validada pelo servidor; informar o identificador de outra conta na solicitação não concede acesso a ela.</li><li>O login, por si só, não concede benefícios de um plano: continuam sendo necessárias a aquisição confirmada e a autorização previstas em RF05–RF07.</li><li>Em ambiente publicado, as credenciais são transmitidas por HTTPS e não aparecem em respostas ou logs.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF08; RNF03, RNF04, RNF05</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">não atribuídos nesta atividade</td>
+        </tr>
+    </tbody>
+</table>
 
-## US01 — Conhecer o jogo
+<div style="text-align: center">
+<p>Tabela 3: Histórias de Usuário</p>
+</div>
 
-**História:** Como visitante, eu quero visualizar a proposta e as principais características do jogo na página inicial para decidir se tenho interesse no projeto.
+## 2. Regras complementares
 
-**Prioridade:** Alta.  
-**RF relacionado:** RF01.  
-**RNFs relacionados:** RNF01, RNF02, RNF03, RNF06.  
-**Story Points:** 3.  
-
-### Critérios de aceitação
-
-1. Ao acessar a página inicial, o visitante encontra uma seção identificada com a apresentação do jogo.
-2. A seção apresenta a proposta e as principais características conforme o conteúdo fornecido pela equipe.
-3. Nas áreas de visualização previstas em RNF03, o conteúdo permanece legível, sem cortes ou sobreposições que impeçam sua leitura.
-4. A página inicial atende ao limite de carregamento e às condições de medição de RNF02.
-
-**Dependência:** textos de apresentação fornecidos pela equipe.
-
-## US02 — Assistir ao trailer
-
-**História:** Como visitante, eu quero assistir ao trailer e controlar sua reprodução para conhecer a atmosfera e o estilo visual do jogo no meu ritmo.
-
-**Prioridade:** Alta.  
-**RF relacionado:** RF02.  
-**RNFs relacionados:** RNF01, RNF02, RNF03.  
-**Story Points:** 3.  
-
-### Critérios de aceitação
-
-1. A seção de trailer disponibiliza o vídeo do jogo fornecido pela equipe.
-2. Com o vídeo carregado e pausado, acionar a reprodução inicia o vídeo.
-3. Durante a reprodução, acionar a pausa interrompe o avanço do vídeo.
-4. Após a pausa, acionar a reprodução retoma o vídeo do ponto interrompido.
-5. Em celular, o visitante consegue expandir o vídeo para tela cheia e retornar à página; fora da tela cheia, o vídeo se ajusta à largura disponível e seus controles permanecem acessíveis.
-
-**Dependência:** arquivo ou origem do trailer disponível. O critério de maximização do vídeo, antes localizado em US01, foi transferido para esta história e explicitado como uma ação do visitante.
-
-## US03 — Consultar os planos de apoio
-
-**História:** Como potencial apoiador, eu quero consultar os três planos e seus preços para identificar uma opção compatível com o valor que pretendo contribuir.
-
-**Prioridade:** Alta.  
-**RF relacionado:** RF03.  
-**RNFs relacionados:** RNF01, RNF03, RNF06.  
-**Story Points:** 5.  
-
-### Critérios de aceitação
-
-1. A seção de apoio apresenta os três planos definidos pelo projeto.
-2. Cada plano possui uma identificação que o distingue dos demais e apresenta seu preço.
-3. Os valores correspondem aos definidos pela equipe e ficam associados ao plano correto.
-4. Identificação e preço seguem a mesma ordem de apresentação nos três planos.
-5. Nos ambientes de RNF03, é possível consultar todos os planos e preços sem informações ocultadas por cortes ou sobreposições.
-
-**Dependência:** identificação e preços dos planos. Consultar planos não depende de concluir uma compra.
-
-## US04 — Criar uma conta
-
-**História:** Como visitante, eu quero criar uma conta na plataforma para associar minhas aquisições e meus benefícios ao meu cadastro.
-
-**Prioridade:** Alta.  
-**RF relacionado:** RF04.  
-**RNFs relacionados:** RNF03 e RNF04.  
-**Story Points:** não atribuídos nesta atividade.  
-
-### Regras de cadastro
+### US04 — Regras de cadastro
 
 - Os campos obrigatórios são nome, e-mail, senha e confirmação de senha.
 - O nome deve conter pelo menos um caractere diferente de espaço.
@@ -79,28 +97,7 @@ Os testes de compatibilidade seguem RNF03. Os Story Points de US01–US03 foram 
 - A confirmação de senha deve ser igual à senha informada.
 - A identificação posterior será feita por login com e-mail e senha. Esse comportamento está documentado em RF08 e US08.
 
-### Critérios de aceitação
-
-1. O formulário apresenta os quatro campos e identifica que todos são obrigatórios.
-2. Ao enviar dados válidos e um e-mail ainda não cadastrado, o sistema cria uma única conta e informa a conclusão.
-3. Se um campo obrigatório estiver vazio ou não atender às regras, o sistema não cria a conta e informa o problema que precisa ser corrigido.
-4. Se a senha e sua confirmação forem diferentes, o sistema impede o cadastro e informa a divergência.
-5. Se o e-mail já estiver cadastrado, o sistema não cria uma segunda conta e informa que não foi possível concluir o cadastro com os dados apresentados.
-6. Após corrigir os dados, o visitante consegue reenviar o formulário.
-7. Em ambiente publicado, os dados são enviados por HTTPS e a senha não é armazenada em texto puro nem exposta em respostas ou logs, conforme RNF04.
-
-**Dependências:** armazenamento de contas e implementação das validações. O cadastro pode ser testado separadamente do login e da aquisição.
-
-## US05 — Adquirir um plano de apoio
-
-**História:** Como usuário cadastrado, eu quero adquirir um dos três planos de apoio para contribuir com o desenvolvimento do jogo e obter os benefícios correspondentes.
-
-**Prioridade:** Alta.  
-**RF relacionado:** RF05; RF08 (identificação por login).  
-**RNFs relacionados:** RNF03 e RNF04.  
-**Story Points:** não atribuídos nesta atividade.  
-
-### Regras de aquisição
+### US05 — Regras de aquisição
 
 - A aquisição exige que o usuário esteja identificado por login.
 - Cada operação de aquisição corresponde a um plano selecionado.
@@ -111,82 +108,45 @@ Os testes de compatibilidade seguem RNF03. Os Story Points de US01–US03 foram 
 - Somente uma aquisição confirmada concede os benefícios do plano.
 - Uma tentativa pendente, cancelada ou malsucedida não remove direitos obtidos por uma aquisição anterior confirmada.
 
-### Critérios de aceitação
+## 3. Dependências e observações
 
-1. Se o visitante tentar adquirir um plano sem estar identificado, o sistema solicita que entre em sua conta antes de prosseguir.
-2. Após selecionar um plano, o usuário visualiza sua identificação, preço e benefícios antes de iniciar o pagamento.
-3. O servidor registra a aquisição pendente vinculada à conta e ao plano selecionados, utilizando o preço definido pelo sistema.
-4. Quando o servidor recebe e valida a confirmação do serviço de pagamento, a aquisição passa para confirmada e os benefícios correspondentes são disponibilizados.
-5. Uma confirmação referente a outra aquisição ou com valor incompatível não libera benefícios.
-6. Se a aquisição permanecer pendente, for cancelada ou falhar, o sistema apresenta a situação e não concede novos benefícios.
-7. Caso a mesma confirmação seja recebida mais de uma vez, o sistema mantém um único registro de aquisição, sem duplicar a concessão de benefícios.
-8. Ao concluir a operação, o registro corresponde à conta, ao plano e ao valor apresentados antes do pagamento.
+Os testes de compatibilidade seguem RNF03. Foram preservados os Story Points existentes; as demais estimativas ficam a cargo da equipe.
+
+### US01 — Conhecer o jogo
+
+**Dependência:** textos de apresentação fornecidos pela equipe.
+
+### US02 — Assistir ao trailer
+
+**Dependência:** arquivo ou origem do trailer disponível. O critério de maximização do vídeo, antes localizado em US01, foi transferido para esta história e explicitado como uma ação do visitante.
+
+### US03 — Consultar os planos de apoio
+
+**Dependência:** identificação e preços dos planos. Consultar planos não depende de concluir uma compra.
+
+### US04 — Criar uma conta
+
+**Dependências:** armazenamento de contas e implementação das validações. O cadastro pode ser testado separadamente do login e da aquisição.
+
+### US05 — Adquirir um plano de apoio
 
 **Dependências:** cadastro, login, configuração dos planos e integração com o serviço de pagamento. Os testes devem usar o ambiente de testes do serviço, sem cobranças reais.
 
 **Observação sobre INVEST:** a história ficou mais verificável, mas seu tamanho e sua estimativa dependem da integração escolhida. Se o trabalho ultrapassar uma entrega curta, deverá ser dividido preservando resultados úteis para o usuário.
 
-## US06 — Consultar os benefícios do meu plano
-
-**História:** Como apoiador, eu quero consultar meu plano adquirido e seus benefícios para saber o que meu apoio me permite receber ou acessar.
-
-**Prioridade:** Média.  
-**RF relacionado:** RF06.  
-**RNFs relacionados:** RNF03, RNF05, RNF06.  
-**Story Points:** a estimar pela equipe.  
-
-### Critérios de aceitação
-
-1. Com a identidade do apoiador estabelecida e uma aquisição confirmada, o sistema apresenta o plano vinculado à sua conta.
-2. A lista de benefícios corresponde à configuração do plano adquirido, sem apresentar benefícios de outro plano como direitos já obtidos.
-3. Quando a conta não possui plano confirmado, o sistema informa essa condição e não apresenta benefícios como adquiridos.
-4. Solicitações sem autorização não retornam os dados privados do plano de outra conta, conforme RNF05.
-5. A apresentação respeita os critérios de compatibilidade e consistência de RNF03 e RNF06.
+### US06 — Consultar os benefícios do meu plano
 
 **Dependências:** US05 e definição dos benefícios de cada plano. O teste pode usar uma conta com aquisição previamente registrada.
 
-## US07 — Acessar conteúdos exclusivos
-
-**História:** Como apoiador, eu quero acessar os conteúdos exclusivos incluídos no meu plano para usufruir dos benefícios do apoio realizado.
-
-**Prioridade:** Média.  
-**RF relacionado:** RF07.  
-**RNFs relacionados:** RNF03, RNF05.  
-**Story Points:** a estimar pela equipe.  
-
-### Critérios de aceitação
-
-1. Para uma conta com aquisição confirmada, o sistema permite abrir os conteúdos disponibilizados e incluídos no respectivo plano.
-2. Para uma conta cujo plano não inclui determinado conteúdo, o sistema nega o acesso sem entregar esse conteúdo.
-3. Uma solicitação sem identificação válida ou sem plano confirmado não retorna conteúdo exclusivo.
-4. As restrições também são aplicadas a solicitações diretas ao endereço do conteúdo, conforme RNF05.
-5. Quando não houver conteúdo publicado para um benefício previsto, o sistema informa a indisponibilidade, sem apresentar um acesso inexistente como disponível.
+### US07 — Acessar conteúdos exclusivos
 
 **Dependências:** aquisição confirmada, conteúdos publicados e definição de quais planos autorizam cada conteúdo. O teste pode usar contas e conteúdos previamente preparados.
 
-## US08 — Entrar na conta
-
-**História:** Como usuário cadastrado, eu quero entrar na minha conta com e-mail e senha para adquirir um plano e acessar meus benefícios com minha identidade verificada.
-
-**Prioridade:** Alta.  
-**RF relacionado:** RF08.  
-**RNFs relacionados:** RNF03, RNF04, RNF05.  
-**Story Points:** não atribuídos nesta atividade.  
-
-### Critérios de aceitação
-
-1. O formulário de login solicita e-mail e senha.
-2. Ao informar as credenciais válidas de uma conta existente, o sistema estabelece uma sessão associada àquela conta.
-3. A comparação do e-mail segue a normalização definida no cadastro; a senha deve ser verificada sem alterar seu conteúdo.
-4. Se o e-mail não existir ou a senha estiver incorreta, o sistema não estabelece a sessão e apresenta a mesma mensagem genérica: “E-mail ou senha inválidos”.
-5. Se um campo obrigatório estiver vazio, o sistema solicita seu preenchimento e não conclui o login.
-6. A identidade usada na aquisição e nas consultas privadas deve corresponder à sessão validada pelo servidor; informar o identificador de outra conta na solicitação não concede acesso a ela.
-7. O login, por si só, não concede benefícios de um plano: continuam sendo necessárias a aquisição confirmada e a autorização previstas em RF05–RF07.
-8. Em ambiente publicado, as credenciais são transmitidas por HTTPS e não aparecem em respostas ou logs.
+### US08 — Entrar na conta
 
 **Dependência:** conta criada conforme RF04. O login não inclui recuperação de senha, login social ou autenticação por serviços externos neste escopo.
 
-## Rastreabilidade
+## 4. Rastreabilidade
 
 | História | RF principal | RNFs relacionados |
 | --- | --- | --- |
@@ -199,8 +159,8 @@ Os testes de compatibilidade seguem RNF03. Os Story Points de US01–US03 foram 
 | US07 | RF07 | RNF03, RNF05 |
 | US08 | RF08 | RNF03, RNF04, RNF05 |
 
-## Documentos relacionados
+## 5. Referências bibliográficas
 
-- [Requisitos funcionais](RF.md)
-- [Requisitos não funcionais](RNF.md)
-- [Início](../README.md)
+- Documentação do projeto Velvet Requiem: [Requisitos Funcionais](RF.md).
+- Documentação do projeto Velvet Requiem: [Requisitos Não Funcionais](RNF.md).
+- [Apresentação do projeto](../README.md).
