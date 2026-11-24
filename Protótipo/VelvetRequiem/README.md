@@ -1,4 +1,4 @@
-# Velvet Requiem · Protótipo da Atividade 05
+# Velvet Requiem · Protótipo da Atividade 07
 
 Protótipo navegável da jornada de apoio a um jogo brasileiro de terror independente, com base nas [histórias US01 a US08 do repositório](https://github.com/sevenminutes67/VelvetRequiem-2026.2/blob/main/Requisitos%20do%20Usuario/HistoriasUsuario.md).
 
@@ -37,7 +37,7 @@ Acesse [http://127.0.0.1:4173](http://127.0.0.1:4173). O projeto roda localmente
 Uma pessoa com acesso de escrita pode copiar a pasta `VelvetRequiem` para a raiz do repositório e acrescentar ao README principal:
 
 ```md
-[Protótipo da Atividade 05](VelvetRequiem/README.md)
+[Protótipo da Atividade 07](VelvetRequiem/README.md)
 ```
 
 O link abre o código e as instruções de execução. Após hospedar o aplicativo, acrescente também o endereço da versão navegável. A pasta `.data` fica fora do versionamento.
