@@ -31,6 +31,8 @@ O site e sua documentação estão sendo construídos. As funcionalidades descri
 
 Os requisitos e as histórias de usuário estão organizados na pasta **Requisitos de Usuário**:
 
+[Protótipo acadêmico – Atividade 07](./Prototipo%20academico%20-%20atividade%2007/README.md)
+
 ## Equipe
 
 - **Mikael André Ortiz Pelegrino**
