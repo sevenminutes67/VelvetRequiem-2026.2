@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100d12">
+  <meta name="description" content="Conheça o projeto de terror independente brasileiro Velvet Requiem e seus planos de apoio.">
+  <title>Velvet Requiem — Terror independente</title>
+  <link rel="preload" as="image" href="./assets/casa.jpeg">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#principal">Ir ao conteúdo</a>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-mark" viewBox="0 0 48 48"><path d="M24 2v44M2 24h44M24 7 7 24l17 17 17-17ZM24 16l8 8-8 8-8-8ZM9 9l7 7m16 16 7 7m0-30-7 7M16 32l-7 7" stroke="currentColor" stroke-width="1.25" fill="none"/><circle cx="24" cy="24" r="2.3" fill="currentColor"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z" fill="currentColor"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-enter" viewBox="0 0 24 24"><path d="M13 4h6v16h-6m-9-8h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 22c-4 0-7-3-7-7 0-3 2-5 4-7 0 3 1 4 2 4 2-3 3-6 2-10 5 4 7 9 7 13 0 4-4 7-8 7Z" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12Z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="m3 7 5 4 4-6 4 6 5-4-2 12H5Zm3 9h12" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><path d="M6 11h12v10H6Zm2 0V7a4 4 0 0 1 8 0v4m-4 4v3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  </svg>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Velvet Requiem, início"><svg aria-hidden="true"><use href="#i-mark"/></svg><span>Velvet Requiem</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#jogo" data-nav="jogo">O jogo</a>
+        <a href="#trailer" data-nav="trailer">Trailer</a>
+        <a href="#apoio" data-nav="apoio">Apoiar</a>
+      </nav>
+      <button type="button" id="account-button" class="button small outline"><svg aria-hidden="true"><use href="#i-enter"/></svg><span>Entrar</span></button>
+    </div>
+  </header>
+  <main id="principal">
+    <div id="home">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <video id="hero-video" class="hero-video" muted loop playsinline preload="none" poster="./assets/casa.jpeg" data-src="./assets/intro.mp4" aria-hidden="true"></video>
+        <div class="shell hero-content">
+          <p class="eyebrow"><span class="live-dot"></span> Survival horror brasileiro</p>
+          <h1 id="hero-title">Velvet<br>Requiem<span>.</span></h1>
+          <p class="hero-lede">Um jogo de terror independente que resgata a atmosfera sombria dos clássicos de PlayStation 1.</p>
+          <div class="actions">
+            <a class="button primary" href="#apoio">Apoiar o projeto <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="button outline" href="#trailer"><svg aria-hidden="true"><use href="#i-play"/></svg> Ver trailer</a>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <div class="shell hero-meta">
+            <a href="#jogo" class="hero-scroll"><span aria-hidden="true">↓</span> Explore o projeto</a>
+            <button type="button" class="text-button" id="hero-toggle" hidden>Pausar fundo</button>
+          </div>
+        </div>
+      </section>
+      <section class="section game" id="jogo" aria-labelledby="game-title">
+        <div class="shell game-grid">
+          <div>
+            <p class="eyebrow red">O jogo</p>
+            <h2 id="game-title">O medo mora<br>nos detalhes.</h2>
+          </div>
+          <div class="game-copy">
+            <p>Velvet Requiem é um projeto de três desenvolvedores brasileiros. A proposta combina cenários de baixa contagem de polígonos, texturas granuladas e a tensão do terror retrô, com referências em produções da Puppet Combo.</p>
+            <p>O jogo está em desenvolvimento. Seu apoio ajuda a equipe a levar o projeto adiante.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section screenshots" aria-labelledby="screenshots-title">
+        <div class="shell">
+          <h2 id="screenshots-title">Capturas do jogo</h2>
+          <div class="screenshot-grid">
+            <a href="./assets/casa.jpeg"><img loading="lazy" width="1600" height="874" src="./assets/casa.jpeg" alt="Casa de madeira cercada por neblina alaranjada"></a>
+            <a href="./assets/carro.jpeg"><img loading="lazy" width="1600" height="875" src="./assets/carro.jpeg" alt="Carro escuro à beira de uma estrada entre árvores"></a>
+            <a href="./assets/sala.jpeg"><img loading="lazy" width="1600" height="877" src="./assets/sala.jpeg" alt="Sala de madeira com televisão antiga e sofá xadrez"></a>
+          </div>
+        </div>
+      </section>
+      <section class="section trailer" id="trailer" aria-labelledby="trailer-title">
+        <div class="shell trailer-grid">
+          <div class="trailer-copy">
+            <h2 id="trailer-title">Trailer</h2>
+            <p><a class="button outline" href="https://youtu.be/UrSg13Kr8c0" target="_blank" rel="noopener">Assistir no YouTube <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          </div>
+          <div class="film">
+            <iframe src="https://www.youtube-nocookie.com/embed/UrSg13Kr8c0" title="Trailer de Velvet Requiem no YouTube" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="section support" id="apoio" aria-labelledby="support-title">
+        <div class="shell">
+          <p class="eyebrow red">Planos de apoio</p>
+          <h2 id="support-title">Ajude o jogo<br>a ganhar vida.</h2>
+          <p class="section-lede">Escolha como apoiar o desenvolvimento. Todos os planos incluem uma cópia digital no lançamento.</p>
+          <p class="demo-note">Demonstra&ccedil;&atilde;o com dados fict&iacute;cios. Contas e hist&oacute;rico ficam neste navegador. Pagamento simulado, sem cobran&ccedil;a.</p>
+          <div class="plans" id="plans"><p role="status">Carregando planos…</p></div>
+        </div>
+      </section>
+    </div>
+    <section id="private-page" class="section private-page" hidden aria-labelledby="private-title"></section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand" href="#inicio"><svg aria-hidden="true"><use href="#i-mark"/></svg><span>Velvet Requiem</span></a>
+      <p>Protótipo acadêmico - Atividade 07</p>
+      <a href="https://github.com/sevenminutes67/VelvetRequiem-2026.2" target="_blank" rel="noopener">Repositório <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
+  <dialog id="dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <button class="icon-button close-dialog" type="button" data-action="close" aria-label="Fechar"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+      <div id="dialog-content"></div>
+    </div>
+  </dialog>
+  <div id="live" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
