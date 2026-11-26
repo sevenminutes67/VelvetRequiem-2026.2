@@ -1,7 +1,5 @@
 # Velvet Requiem · Protótipo da Atividade 07
 
-Protótipo navegável da jornada de apoio a um jogo brasileiro de terror independente, com base nas [histórias US01 a US08 do repositório](https://github.com/sevenminutes67/VelvetRequiem-2026.2/blob/main/Requisitos%20do%20Usuario/HistoriasUsuario.md).
-
 ## Como abrir
 
 Com o **Node.js 22 ou superior** instalado, extraia o ZIP e execute `ABRIR-PROTOTIPO.cmd` no Windows. O arquivo abre o navegador e mantém o servidor funcionando enquanto a janela estiver aberta.
