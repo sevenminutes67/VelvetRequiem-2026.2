@@ -19,7 +19,7 @@ Velvet Requiem é um projeto brasileiro de jogo de terror com estética retrô i
 
 Também é possível simular o cancelamento ou a falha de um pagamento. Os estados e benefícios fazem parte da demonstração. As contas e o histórico ficam salvos no navegador, os arquivos publicados são públicos e a simulação não realiza cobranças.
 
-
-## Tecnologias e publicação
-
-O frontend usa HTML, CSS e JavaScript. A versão estática roda sem servidor de aplicação e é destinada ao GitHub Pages. Com a opção **Deploy from a branch**, coloque os arquivos do site em `docs/` na raiz do repositório, com o `index.html` diretamente dentro da pasta. Depois, em **Settings → Pages**, escolha a branch `main` e a origem `/docs`. Para publicar de uma pasta como `Prototipo/`, configure um workflow do GitHub Actions que publique a pasta que contém o `index.html`.
+## Observação
+Onde os dados da demonstração ficam salvos
+As contas fictícias e o histórico de pagamentos simulados ficam no armazenamento local do navegador (localStorage). Eles continuam disponíveis ao recarregar a página ou voltar ao site no mesmo navegador e perfil. Se você limpar os dados do site, as contas e o histórico serão apagados. Em outro navegador, perfil ou dispositivo, será necessário criar uma nova conta de demonstração.
+O login fica guardado na sessão da aba (sessionStorage). Ao fechar a aba, você normalmente precisa entrar de novo. O GitHub Pages hospeda os arquivos estáticos do site. O protótipo não envia os cadastros nem o histórico a um servidor ou banco de dados.
