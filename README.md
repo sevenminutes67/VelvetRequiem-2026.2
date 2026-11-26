@@ -36,3 +36,6 @@ Os requisitos e as histórias de usuário estão organizados na pasta **Requisit
 - **Mikael André Ortiz Pelegrino**
 - **João Gabriel Marques de Miranda**
 - **Daniel Henrique Delmônico Cintra**
+
+# Link para o vídeo
+https://www.youtube.com/watch?v=4hwvanesYPo
