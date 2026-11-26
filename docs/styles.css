@@ -89,7 +89,6 @@ h3 { font-size: 2rem; line-height: 1.08; letter-spacing: -.035em; }
 .pass-list svg { flex: 0 0 17px; height: 17px; color: var(--red); margin-top: 2px; }
 .plan .button { margin-top: auto; width: 100%; }
 .plan .button svg { margin-left: auto; }
-.demo-note { margin: 20px 0 0; color: var(--muted); font-size: .8rem; }
 .site-footer { border-top: 1px solid #352932; }
 .footer-inner { min-height: 98px; display: flex; align-items: center; justify-content: space-between; gap: 16px; color: var(--muted); font-size: .82rem; }
 .footer-inner .brand { color: var(--cream); }
